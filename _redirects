@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "dist/**/*",
+      "use": "@cloudflare/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
